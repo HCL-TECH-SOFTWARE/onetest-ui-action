@@ -22,7 +22,7 @@ jobs:
         name: HCL OneTest UI
         steps:
          - name: Execute Test
-           uses: anuraag-k/FunctionalTestAction@main
+           uses: HCL-TECH-SOFTWARE/FunctionalTestAction@main
            with:
             projectDirectory: 
             scriptName: 
