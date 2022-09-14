@@ -28,14 +28,10 @@ jobs:
         name: HCL OneTest UI
         steps:
          - name: Execute Test
-           uses: HCL-TECH-SOFTWARE/onetest-ui-action@v1
+           uses: HCL-TECH-SOFTWARE/onetest-ui-action@main
            with:
-            projectDirectory: 
-            scriptName: 
-            iterationCount:
-            logFormat:  
-            userArguments:
-
+            projectDirectory:  <C:\Data\MyProject>
+            scriptName: <MyScript>
 ```
 
 3. Update the parameterized items to refer to your project and tests (see parameter details below).
@@ -48,7 +44,7 @@ As an alternative to having all of the test projects pre-configured on the runne
 
 ### Required Parameters
 
-- **rojectDirectory** Fully qualified path to the HCL OneTest UI project directory.
+- **projectDirectory** Fully qualified path to the HCL OneTest UI project directory.
 - **scriptName** Name of the script to be executed without the extension. For eg., Script1 or TestFolder.Script1 in case Script1 is in a folder named TestFolder.
 
 ### Optional Parameters
